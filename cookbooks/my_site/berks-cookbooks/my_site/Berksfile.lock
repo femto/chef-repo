@@ -1,0 +1,9 @@
+DEPENDENCIES
+  imagemagick (~> 0.2.3)
+  my_site
+    path: .
+    metadata: true
+
+GRAPH
+  imagemagick (0.2.3)
+  my_site (0.1.0)

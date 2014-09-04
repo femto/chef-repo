@@ -1,0 +1,1302 @@
+{
+  "name": "femto",
+  "normal": {
+    "tags": [
+
+    ]
+  },
+  "automatic": {
+    "virtualization": {
+      "systems": {
+        "vbox": "guest"
+      },
+      "system": "vbox",
+      "role": "guest"
+    },
+    "kernel": {
+      "name": "Linux",
+      "release": "3.5.0-54-generic",
+      "version": "#81~precise1-Ubuntu SMP Tue Jul 15 04:05:58 UTC 2014",
+      "machine": "i686",
+      "os": "GNU/Linux",
+      "modules": {
+        "vboxvideo": {
+          "size": "12540",
+          "refcount": "0"
+        },
+        "drm": {
+          "size": "240443",
+          "refcount": "1"
+        },
+        "vboxsf": {
+          "size": "42521",
+          "refcount": "1"
+        },
+        "dm_crypt": {
+          "size": "22572",
+          "refcount": "0"
+        },
+        "ppdev": {
+          "size": "12850",
+          "refcount": "0"
+        },
+        "ext2": {
+          "size": "67991",
+          "refcount": "1"
+        },
+        "microcode": {
+          "size": "18396",
+          "refcount": "0"
+        },
+        "parport_pc": {
+          "size": "32115",
+          "refcount": "0"
+        },
+        "psmouse": {
+          "size": "91586",
+          "refcount": "0"
+        },
+        "serio_raw": {
+          "size": "13032",
+          "refcount": "0"
+        },
+        "vboxguest": {
+          "size": "202291",
+          "refcount": "2"
+        },
+        "mac_hid": {
+          "size": "13078",
+          "refcount": "0"
+        },
+        "i2c_piix4": {
+          "size": "13094",
+          "refcount": "0"
+        },
+        "lp": {
+          "size": "17456",
+          "refcount": "0"
+        },
+        "parport": {
+          "size": "40931",
+          "refcount": "3"
+        },
+        "vesafb": {
+          "size": "13518",
+          "refcount": "1"
+        },
+        "ahci": {
+          "size": "25621",
+          "refcount": "2"
+        },
+        "libahci": {
+          "size": "26166",
+          "refcount": "1"
+        },
+        "e1000": {
+          "size": "101894",
+          "refcount": "0"
+        }
+      }
+    },
+    "os": "linux",
+    "os_version": "3.5.0-54-generic",
+    "lsb": {
+      "id": "Ubuntu",
+      "release": "12.04",
+      "codename": "precise",
+      "description": "Ubuntu 12.04.2 LTS"
+    },
+    "platform": "ubuntu",
+    "platform_version": "12.04",
+    "platform_family": "debian",
+    "network": {
+      "interfaces": {
+        "lo": {
+          "mtu": "16436",
+          "flags": [
+            "LOOPBACK",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Loopback",
+          "addresses": {
+            "127.0.0.1": {
+              "family": "inet",
+              "prefixlen": "8",
+              "netmask": "255.0.0.0",
+              "scope": "Node"
+            },
+            "::1": {
+              "family": "inet6",
+              "prefixlen": "128",
+              "scope": "Node"
+            }
+          },
+          "state": "unknown"
+        },
+        "eth0": {
+          "type": "eth",
+          "number": "0",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "08:00:27:D0:18:0B": {
+              "family": "lladdr"
+            },
+            "10.0.2.15": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "10.0.2.255",
+              "scope": "Global"
+            },
+            "fe80::a00:27ff:fed0:180b": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            }
+          },
+          "state": "up",
+          "arp": {
+            "10.0.2.3": "52:54:00:12:35:03",
+            "10.0.2.2": "52:54:00:12:35:02"
+          },
+          "routes": [
+            {
+              "destination": "default",
+              "family": "inet",
+              "via": "10.0.2.2",
+              "metric": "100"
+            },
+            {
+              "destination": "10.0.2.0/24",
+              "family": "inet",
+              "scope": "link",
+              "proto": "kernel",
+              "src": "10.0.2.15"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ]
+        }
+      },
+      "default_interface": "eth0",
+      "default_gateway": "10.0.2.2"
+    },
+    "counters": {
+      "network": {
+        "interfaces": {
+          "lo": {
+            "rx": {
+              "bytes": "170626",
+              "packets": "296",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "170626",
+              "packets": "296",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "eth0": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "616394",
+              "packets": "9491",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "23240390",
+              "packets": "17111",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          }
+        }
+      }
+    },
+    "ipaddress": "10.0.2.15",
+    "macaddress": "08:00:27:D0:18:0B",
+    "ip6address": "fe80::a00:27ff:fed0:180b",
+    "dmi": {
+      "dmidecode_version": "2.11",
+      "smbios_version": "2.5",
+      "structures": {
+        "count": "10",
+        "size": "449"
+      },
+      "table_location": "0x000E1000",
+      "bios": {
+        "all_records": [
+          {
+            "record_id": "0x0000",
+            "size": "0",
+            "application_identifier": "BIOS Information",
+            "Vendor": "innotek GmbH",
+            "Version": "VirtualBox",
+            "Release Date": "12/01/2006",
+            "Address": "0xE0000",
+            "Runtime Size": "128 kB",
+            "ROM Size": "128 kB",
+            "Characteristics": {
+              "ISA is supported": null,
+              "PCI is supported": null,
+              "Boot from CD is supported": null,
+              "Selectable boot is supported": null,
+              "8042 keyboard services are supported (int 9h)": null,
+              "CGA/mono video services are supported (int 10h)": null,
+              "ACPI is supported": null
+            }
+          }
+        ],
+        "vendor": "innotek GmbH",
+        "version": "VirtualBox",
+        "release_date": "12/01/2006",
+        "address": "0xE0000",
+        "runtime_size": "128 kB",
+        "rom_size": "128 kB"
+      },
+      "system": {
+        "all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "innotek GmbH",
+            "Product Name": "VirtualBox",
+            "Version": "1.2",
+            "Serial Number": "0",
+            "UUID": "9421BACF-9C35-4F7D-965F-3B8B2D5FA696",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Virtual Machine"
+          }
+        ],
+        "manufacturer": "innotek GmbH",
+        "product_name": "VirtualBox",
+        "version": "1.2",
+        "serial_number": "0",
+        "uuid": "9421BACF-9C35-4F7D-965F-3B8B2D5FA696",
+        "wake_up_type": "Power Switch",
+        "sku_number": "Not Specified",
+        "family": "Virtual Machine"
+      },
+      "base_board": {
+        "all_records": [
+          {
+            "record_id": "0x0008",
+            "size": "2",
+            "application_identifier": "Base Board Information",
+            "Manufacturer": "Oracle Corporation",
+            "Product Name": "VirtualBox",
+            "Version": "1.2",
+            "Serial Number": "0",
+            "Asset Tag": "Not Specified",
+            "Features": {
+              "Board is a hosting board": null
+            },
+            "Location In Chassis": "Not Specified",
+            "Chassis Handle": "0x0003",
+            "Type": "Motherboard",
+            "Contained Object Handles": "0"
+          }
+        ],
+        "manufacturer": "Oracle Corporation",
+        "product_name": "VirtualBox",
+        "version": "1.2",
+        "serial_number": "0",
+        "asset_tag": "Not Specified",
+        "location_in_chassis": "Not Specified",
+        "chassis_handle": "0x0003",
+        "type": "Motherboard",
+        "contained_object_handles": "0"
+      },
+      "chassis": {
+        "all_records": [
+          {
+            "record_id": "0x0003",
+            "size": "3",
+            "application_identifier": "Inactive",
+            "Manufacturer": "Oracle Corporation",
+            "Type": "Other",
+            "Lock": "Not Present",
+            "Version": "Not Specified",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Boot-up State": "Safe",
+            "Power Supply State": "Safe",
+            "Thermal State": "Safe",
+            "Security Status": "None"
+          }
+        ],
+        "manufacturer": "Oracle Corporation",
+        "type": "Other",
+        "lock": "Not Present",
+        "version": "Not Specified",
+        "serial_number": "Not Specified",
+        "asset_tag": "Not Specified",
+        "boot_up_state": "Safe",
+        "power_supply_state": "Safe",
+        "thermal_state": "Safe",
+        "security_status": "None"
+      },
+      "oem_strings": {
+        "all_records": [
+          {
+            "record_id": "0x0002",
+            "size": "11",
+            "application_identifier": "End Of Table",
+            "String 1": "vboxVer_4.3.14",
+            "String 2": "vboxRev_95030",
+            "Header and Data": {
+              "80 08 08 00 9A 65 26 00": null
+            }
+          }
+        ],
+        "string_1": "vboxVer_4.3.14",
+        "string_2": "vboxRev_95030"
+      }
+    },
+    "cpu": {
+      "0": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "69",
+        "model_name": "Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz",
+        "stepping": "1",
+        "mhz": "2516.543",
+        "cache_size": "6144 KB",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "up",
+          "pni",
+          "monitor",
+          "ssse3",
+          "lahf_lm"
+        ]
+      },
+      "total": 1,
+      "real": 0
+    },
+    "filesystem": {
+      "/dev/mapper/vagrant-root": {
+        "kb_size": "40260188",
+        "kb_used": "1855080",
+        "kb_available": "36359976",
+        "percent_used": "5%",
+        "mount": "/",
+        "total_inodes": "2559088",
+        "inodes_used": "99670",
+        "inodes_available": "2459418",
+        "inodes_percent_used": "4%",
+        "fs_type": "ext4",
+        "mount_options": [
+          "rw",
+          "errors=remount-ro"
+        ]
+      },
+      "udev": {
+        "kb_size": "179596",
+        "kb_used": "4",
+        "kb_available": "179592",
+        "percent_used": "1%",
+        "mount": "/dev",
+        "total_inodes": "44899",
+        "inodes_used": "458",
+        "inodes_available": "44441",
+        "inodes_percent_used": "2%",
+        "fs_type": "devtmpfs",
+        "mount_options": [
+          "rw",
+          "mode=0755"
+        ]
+      },
+      "tmpfs": {
+        "kb_size": "37840",
+        "kb_used": "260",
+        "kb_available": "37580",
+        "percent_used": "1%",
+        "mount": "/run",
+        "total_inodes": "47298",
+        "inodes_used": "356",
+        "inodes_available": "46942",
+        "inodes_percent_used": "1%",
+        "fs_type": "tmpfs",
+        "mount_options": [
+          "rw",
+          "noexec",
+          "nosuid",
+          "size=10%",
+          "mode=0755"
+        ]
+      },
+      "none": {
+        "kb_size": "189192",
+        "kb_used": "0",
+        "kb_available": "189192",
+        "percent_used": "0%",
+        "mount": "/run/shm",
+        "total_inodes": "47298",
+        "inodes_used": "1",
+        "inodes_available": "47297",
+        "inodes_percent_used": "1%",
+        "fs_type": "tmpfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev"
+        ]
+      },
+      "/dev/sda1": {
+        "kb_size": "233191",
+        "kb_used": "55795",
+        "kb_available": "164955",
+        "percent_used": "26%",
+        "mount": "/boot",
+        "total_inodes": "124496",
+        "inodes_used": "235",
+        "inodes_available": "124261",
+        "inodes_percent_used": "1%",
+        "fs_type": "ext2",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "vagrant": {
+        "kb_size": "244277768",
+        "kb_used": "57753180",
+        "kb_available": "186524588",
+        "percent_used": "24%",
+        "mount": "/vagrant",
+        "total_inodes": "1000",
+        "inodes_used": "0",
+        "inodes_available": "1000",
+        "inodes_percent_used": "0%",
+        "fs_type": "vboxsf",
+        "mount_options": [
+          "uid=900",
+          "gid=900",
+          "rw"
+        ]
+      },
+      "proc": {
+        "mount": "/proc",
+        "fs_type": "proc",
+        "mount_options": [
+          "rw",
+          "noexec",
+          "nosuid",
+          "nodev"
+        ]
+      },
+      "sysfs": {
+        "mount": "/sys",
+        "fs_type": "sysfs",
+        "mount_options": [
+          "rw",
+          "noexec",
+          "nosuid",
+          "nodev"
+        ]
+      },
+      "devpts": {
+        "mount": "/dev/pts",
+        "fs_type": "devpts",
+        "mount_options": [
+          "rw",
+          "noexec",
+          "nosuid",
+          "gid=5",
+          "mode=0620"
+        ]
+      },
+      "sda1": {
+        "fs_type": "ext2",
+        "uuid": "7a789cae-ad77-46a8-848f-74493d1a9c36"
+      },
+      "sda5": {
+        "fs_type": "LVM2_member",
+        "uuid": "LnbE4K-R7F7-IODP-fs7p-tzRS-jruv-1zoIvL"
+      },
+      "vagrant-root": {
+        "fs_type": "(dm-0)",
+        "uuid": "(dm-0)",
+        "label": "(dm-0)"
+      },
+      "vagrant-swap_1": {
+        "fs_type": "(dm-1)",
+        "uuid": "(dm-1)",
+        "label": "(dm-1)"
+      },
+      "rootfs": {
+        "mount": "/",
+        "fs_type": "rootfs",
+        "mount_options": [
+          "rw"
+        ]
+      }
+    },
+    "memory": {
+      "swap": {
+        "cached": "0kB",
+        "total": "786428kB",
+        "free": "786428kB"
+      },
+      "total": "378384kB",
+      "free": "60808kB",
+      "buffers": "33236kB",
+      "cached": "203652kB",
+      "active": "130028kB",
+      "inactive": "160556kB",
+      "high_total": "0kB",
+      "high_free": "0kB",
+      "low_total": "378384kB",
+      "low_free": "60808kB",
+      "dirty": "20kB",
+      "writeback": "0kB",
+      "anon_pages": "53700kB",
+      "mapped": "8972kB",
+      "slab": "19384kB",
+      "slab_reclaimable": "14168kB",
+      "slab_unreclaim": "5216kB",
+      "page_tables": "724kB",
+      "nfs_unstable": "0kB",
+      "bounce": "0kB",
+      "commit_limit": "975620kB",
+      "committed_as": "109880kB",
+      "vmalloc_total": "643128kB",
+      "vmalloc_used": "15068kB",
+      "vmalloc_chunk": "627696kB"
+    },
+    "languages": {
+      "c": {
+        "gcc": {
+          "version": "4.6.3",
+          "description": "gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) "
+        }
+      },
+      "perl": {
+        "version": "5.14.2",
+        "archname": "i686-linux-gnu-thread-multi-64int"
+      },
+      "python": {
+        "version": "2.7.3",
+        "builddate": "Feb 27 2014, 20:00:17"
+      },
+      "ruby": {
+        "platform": "i686-linux",
+        "version": "1.9.3",
+        "release_date": "2013-11-22",
+        "target": "i686-pc-linux-gnu",
+        "target_cpu": "i686",
+        "target_vendor": "pc",
+        "target_os": "linux",
+        "host": "i686-pc-linux-gnu",
+        "host_cpu": "i686",
+        "host_os": "linux-gnu",
+        "host_vendor": "pc",
+        "bin_dir": "/opt/chef/embedded/bin",
+        "ruby_bin": "/opt/chef/embedded/bin/ruby",
+        "gems_dir": "/opt/chef/embedded/lib/ruby/gems/1.9.1",
+        "gem_bin": "/opt/chef/embedded/bin/gem"
+      }
+    },
+    "keys": {
+      "ssh": {
+        "host_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDVtRM7eIWRWJAhndzR4pjxrLG+O/i0+bQjAmzm1gpV5rIou0Aup0EzuaOdqbEDfQNgWQ8x2YeWJpKD7s1lNXav+7l2MjPVJ2UBCsNeN6kni1a1UHJp7ewXGwOLo0lFcz0vqz82LEDhvBlbuH1VC2RcwDvk1uL5ExTT3UnqSk/i2H6WrqnQq1FY6dmixgKV2bTkTEdQkZnPL9MORUNZkuQewhj+jO0blWC8fDIPNXKgDSCY6KxahsBtEFbGVqgdA5XhnM6LweMTDl3BSIKTpBiUXCXVvig9yQVyZ7dbC8ouDeLFAcK2inNDVRRc8BXMmyCk4Z9u9Og52Yl85T+pFaBN",
+        "host_dsa_public": "AAAAB3NzaC1kc3MAAACBAP4tbfh/T6W/rLADwWxNfeLoueceT0Kk2fS7b83KxSl7gZ/ydYGksyHCqq4/w/3HVzhAHdBGZ6bgAJLaEr5tyqFYo1YN3yxuWsHt2hFqsxmy9/3hmEN82mrbNYLtz3gezx7DfF2LQsGArcbt3Wrb1iKmf/otAR57jqU7HdNaDDY7AAAAFQCCA/qLr5GEewVUr02gsCCF+2jakwAAAIEAlNI+7az2WZoQwPB+S3X17FGRcWsUNdMRHf7zrCFeXHr3e6E1GSHJnz1sqqNApqRmubxn71pYxgdf5m0NxzMakgYgKfaRcuBd1wbe4lo0dXxc4D5U5KBE+ZAK4e+q58z0/t42kY2RHDcOMoinzE6Ea7pyxWF9vaytArHT7U3bLe8AAACBAORdVI6p8tjEmPW92PQECpDRFCLOUAyXFeb/xoHwIn+Y5j32plOhp7/q171ytB2mIn2LMBsTplwSnOkhnd0wfYr08XWq9i/tIbYPAAVpCKVYIE8SXOvvUF83aa+qOfJ/9hfBLK2KQZm1YNL90ybcl7JIqhJgElgSdhmU0mMEOFz+",
+        "host_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBI/fbbkQd4VRTU7YAn7oWhgUsXWYkFDzbmhsVHy/vpOkeMEZFCrKvv21z16Ip+b8hvEWukFt5JEa+vLpgMC7QCI=",
+        "host_ecdsa_type": "ecdsa-sha2-nistp256"
+      }
+    },
+    "etc": {
+      "passwd": {
+        "root": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 0,
+          "shell": "/bin/bash",
+          "gecos": "root"
+        },
+        "daemon": {
+          "dir": "/usr/sbin",
+          "gid": 1,
+          "uid": 1,
+          "shell": "/bin/sh",
+          "gecos": "daemon"
+        },
+        "bin": {
+          "dir": "/bin",
+          "gid": 2,
+          "uid": 2,
+          "shell": "/bin/sh",
+          "gecos": "bin"
+        },
+        "sys": {
+          "dir": "/dev",
+          "gid": 3,
+          "uid": 3,
+          "shell": "/bin/sh",
+          "gecos": "sys"
+        },
+        "sync": {
+          "dir": "/bin",
+          "gid": 65534,
+          "uid": 4,
+          "shell": "/bin/sync",
+          "gecos": "sync"
+        },
+        "games": {
+          "dir": "/usr/games",
+          "gid": 60,
+          "uid": 5,
+          "shell": "/bin/sh",
+          "gecos": "games"
+        },
+        "man": {
+          "dir": "/var/cache/man",
+          "gid": 12,
+          "uid": 6,
+          "shell": "/bin/sh",
+          "gecos": "man"
+        },
+        "lp": {
+          "dir": "/var/spool/lpd",
+          "gid": 7,
+          "uid": 7,
+          "shell": "/bin/sh",
+          "gecos": "lp"
+        },
+        "mail": {
+          "dir": "/var/mail",
+          "gid": 8,
+          "uid": 8,
+          "shell": "/bin/sh",
+          "gecos": "mail"
+        },
+        "news": {
+          "dir": "/var/spool/news",
+          "gid": 9,
+          "uid": 9,
+          "shell": "/bin/sh",
+          "gecos": "news"
+        },
+        "uucp": {
+          "dir": "/var/spool/uucp",
+          "gid": 10,
+          "uid": 10,
+          "shell": "/bin/sh",
+          "gecos": "uucp"
+        },
+        "proxy": {
+          "dir": "/bin",
+          "gid": 13,
+          "uid": 13,
+          "shell": "/bin/sh",
+          "gecos": "proxy"
+        },
+        "www-data": {
+          "dir": "/var/www",
+          "gid": 33,
+          "uid": 33,
+          "shell": "/bin/sh",
+          "gecos": "www-data"
+        },
+        "backup": {
+          "dir": "/var/backups",
+          "gid": 34,
+          "uid": 34,
+          "shell": "/bin/sh",
+          "gecos": "backup"
+        },
+        "list": {
+          "dir": "/var/list",
+          "gid": 38,
+          "uid": 38,
+          "shell": "/bin/sh",
+          "gecos": "Mailing List Manager"
+        },
+        "irc": {
+          "dir": "/var/run/ircd",
+          "gid": 39,
+          "uid": 39,
+          "shell": "/bin/sh",
+          "gecos": "ircd"
+        },
+        "gnats": {
+          "dir": "/var/lib/gnats",
+          "gid": 41,
+          "uid": 41,
+          "shell": "/bin/sh",
+          "gecos": "Gnats Bug-Reporting System (admin)"
+        },
+        "nobody": {
+          "dir": "/nonexistent",
+          "gid": 65534,
+          "uid": 65534,
+          "shell": "/bin/sh",
+          "gecos": "nobody"
+        },
+        "libuuid": {
+          "dir": "/var/lib/libuuid",
+          "gid": 101,
+          "uid": 100,
+          "shell": "/bin/sh",
+          "gecos": ""
+        },
+        "syslog": {
+          "dir": "/home/syslog",
+          "gid": 103,
+          "uid": 101,
+          "shell": "/bin/false",
+          "gecos": ""
+        },
+        "messagebus": {
+          "dir": "/var/run/dbus",
+          "gid": 105,
+          "uid": 102,
+          "shell": "/bin/false",
+          "gecos": ""
+        },
+        "sshd": {
+          "dir": "/var/run/sshd",
+          "gid": 65534,
+          "uid": 103,
+          "shell": "/usr/sbin/nologin",
+          "gecos": ""
+        },
+        "vagrant": {
+          "dir": "/home/vagrant",
+          "gid": 900,
+          "uid": 900,
+          "shell": "/bin/bash",
+          "gecos": "vagrant,,,"
+        },
+        "vboxadd": {
+          "dir": "/var/run/vboxadd",
+          "gid": 1,
+          "uid": 999,
+          "shell": "/bin/false",
+          "gecos": ""
+        }
+      },
+      "group": {
+        "root": {
+          "gid": 0,
+          "members": [
+
+          ]
+        },
+        "daemon": {
+          "gid": 1,
+          "members": [
+
+          ]
+        },
+        "bin": {
+          "gid": 2,
+          "members": [
+
+          ]
+        },
+        "sys": {
+          "gid": 3,
+          "members": [
+
+          ]
+        },
+        "adm": {
+          "gid": 4,
+          "members": [
+            "vagrant"
+          ]
+        },
+        "tty": {
+          "gid": 5,
+          "members": [
+
+          ]
+        },
+        "disk": {
+          "gid": 6,
+          "members": [
+
+          ]
+        },
+        "lp": {
+          "gid": 7,
+          "members": [
+
+          ]
+        },
+        "mail": {
+          "gid": 8,
+          "members": [
+
+          ]
+        },
+        "news": {
+          "gid": 9,
+          "members": [
+
+          ]
+        },
+        "uucp": {
+          "gid": 10,
+          "members": [
+
+          ]
+        },
+        "man": {
+          "gid": 12,
+          "members": [
+
+          ]
+        },
+        "proxy": {
+          "gid": 13,
+          "members": [
+
+          ]
+        },
+        "kmem": {
+          "gid": 15,
+          "members": [
+
+          ]
+        },
+        "dialout": {
+          "gid": 20,
+          "members": [
+
+          ]
+        },
+        "fax": {
+          "gid": 21,
+          "members": [
+
+          ]
+        },
+        "voice": {
+          "gid": 22,
+          "members": [
+
+          ]
+        },
+        "cdrom": {
+          "gid": 24,
+          "members": [
+            "vagrant"
+          ]
+        },
+        "floppy": {
+          "gid": 25,
+          "members": [
+
+          ]
+        },
+        "tape": {
+          "gid": 26,
+          "members": [
+
+          ]
+        },
+        "sudo": {
+          "gid": 27,
+          "members": [
+            "vagrant"
+          ]
+        },
+        "audio": {
+          "gid": 29,
+          "members": [
+
+          ]
+        },
+        "dip": {
+          "gid": 30,
+          "members": [
+            "vagrant"
+          ]
+        },
+        "www-data": {
+          "gid": 33,
+          "members": [
+
+          ]
+        },
+        "backup": {
+          "gid": 34,
+          "members": [
+
+          ]
+        },
+        "operator": {
+          "gid": 37,
+          "members": [
+
+          ]
+        },
+        "list": {
+          "gid": 38,
+          "members": [
+
+          ]
+        },
+        "irc": {
+          "gid": 39,
+          "members": [
+
+          ]
+        },
+        "src": {
+          "gid": 40,
+          "members": [
+
+          ]
+        },
+        "gnats": {
+          "gid": 41,
+          "members": [
+
+          ]
+        },
+        "shadow": {
+          "gid": 42,
+          "members": [
+
+          ]
+        },
+        "utmp": {
+          "gid": 43,
+          "members": [
+
+          ]
+        },
+        "video": {
+          "gid": 44,
+          "members": [
+
+          ]
+        },
+        "sasl": {
+          "gid": 45,
+          "members": [
+
+          ]
+        },
+        "plugdev": {
+          "gid": 46,
+          "members": [
+            "vagrant"
+          ]
+        },
+        "staff": {
+          "gid": 50,
+          "members": [
+
+          ]
+        },
+        "games": {
+          "gid": 60,
+          "members": [
+
+          ]
+        },
+        "users": {
+          "gid": 100,
+          "members": [
+
+          ]
+        },
+        "nogroup": {
+          "gid": 65534,
+          "members": [
+
+          ]
+        },
+        "libuuid": {
+          "gid": 101,
+          "members": [
+
+          ]
+        },
+        "crontab": {
+          "gid": 102,
+          "members": [
+
+          ]
+        },
+        "syslog": {
+          "gid": 103,
+          "members": [
+
+          ]
+        },
+        "fuse": {
+          "gid": 104,
+          "members": [
+
+          ]
+        },
+        "messagebus": {
+          "gid": 105,
+          "members": [
+
+          ]
+        },
+        "mlocate": {
+          "gid": 106,
+          "members": [
+
+          ]
+        },
+        "ssh": {
+          "gid": 107,
+          "members": [
+
+          ]
+        },
+        "vagrant": {
+          "gid": 900,
+          "members": [
+
+          ]
+        },
+        "lpadmin": {
+          "gid": 108,
+          "members": [
+            "vagrant"
+          ]
+        },
+        "sambashare": {
+          "gid": 109,
+          "members": [
+            "vagrant"
+          ]
+        },
+        "vboxsf": {
+          "gid": 1000,
+          "members": [
+
+          ]
+        }
+      }
+    },
+    "current_user": "vagrant",
+    "cloud_v2": null,
+    "chef_packages": {
+      "ohai": {
+        "version": "7.2.4",
+        "ohai_root": "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/ohai-7.2.4/lib/ohai"
+      },
+      "chef": {
+        "version": "11.14.6",
+        "chef_root": "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.6/lib"
+      }
+    },
+    "hostname": "femto-starter",
+    "machinename": "femto-starter",
+    "fqdn": "femto-starter",
+    "domain": null,
+    "root_group": "root",
+    "command": {
+      "ps": "ps -ef"
+    },
+    "block_device": {
+      "sda": {
+        "size": "83886080",
+        "removable": "0",
+        "model": "VBOX HARDDISK",
+        "rev": "1.0",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "ATA"
+      },
+      "sr0": {
+        "size": "2097151",
+        "removable": "1",
+        "model": "CD-ROM",
+        "rev": "1.0",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "VBOX"
+      },
+      "sr1": {
+        "size": "2097151",
+        "removable": "1",
+        "model": "CD-ROM",
+        "rev": "1.0",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "VBOX"
+      },
+      "dm-0": {
+        "size": "81805312",
+        "removable": "0"
+      },
+      "dm-1": {
+        "size": "1572864",
+        "removable": "0"
+      },
+      "ram0": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram1": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram2": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram3": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram4": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram5": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram6": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram7": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram8": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram9": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "loop0": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop1": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop2": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop3": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop4": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop5": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop6": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop7": {
+        "size": "0",
+        "removable": "0"
+      },
+      "ram10": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram11": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram12": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram13": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram14": {
+        "size": "131072",
+        "removable": "0"
+      },
+      "ram15": {
+        "size": "131072",
+        "removable": "0"
+      }
+    },
+    "ohai_time": 1409793975.3580298,
+    "init_package": "init",
+    "uptime_seconds": 290,
+    "uptime": "4 minutes 50 seconds",
+    "idletime_seconds": 261,
+    "idletime": "4 minutes 21 seconds",
+    "recipes": [
+      "imagemagick::rmagick",
+      "imagemagick::default",
+      "imagemagick::devel"
+    ],
+    "roles": [
+
+    ]
+  },
+  "run_list": [
+    "recipe[imagemagick::rmagick]"
+  ]
+}
