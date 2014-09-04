@@ -3,7 +3,90 @@
   "normal": {
     "tags": [
 
-    ]
+    ],
+    "rbenv": {
+      "install_pkgs": [
+        "git-core",
+        "grep"
+      ]
+    }
+  },
+  "default": {
+    "rbenv": {
+      "git_url": "git://github.com/sstephenson/rbenv.git",
+      "git_ref": "v0.4.0",
+      "upgrade": "none",
+      "root_path": "/usr/local/rbenv",
+      "vagrant": {
+        "system_chef_solo": "/opt/ruby/bin/chef-solo"
+      },
+      "user_installs": [
+        {
+          "user": "vagrant",
+          "rubies": [
+            "2.1.2"
+          ],
+          "global": "2.1.2",
+          "gems": {
+            "2.1.2": [
+              {
+                "name": "rails"
+              },
+              {
+                "name": "rake"
+              }
+            ],
+            "jruby-1.6.5": [
+              {
+                "name": "rest-client"
+              }
+            ]
+          }
+        }
+      ],
+      "rubies": [
+        "2.1.2"
+      ],
+      "user_rubies": [
+        "2.1.2"
+      ],
+      "gems": {
+      },
+      "user_gems": {
+      },
+      "plugins": [
+
+      ],
+      "user_plugins": [
+
+      ],
+      "create_profiled": true,
+      "user_home_root": "/home",
+      "user": [
+        {
+          "user": "vagrant",
+          "rubies": [
+            "2.1.2"
+          ],
+          "global": "2.1.2",
+          "gems": {
+            "2.1.2": [
+              {
+                "name": "rails"
+              },
+              {
+                "name": "rake"
+              }
+            ],
+            "jruby-1.6.5": [
+              {
+                "name": "rest-client"
+              }
+            ]
+          }
+        }
+      ]
+    }
   },
   "automatic": {
     "virtualization": {
@@ -164,7 +247,6 @@
           },
           "state": "up",
           "arp": {
-            "10.0.2.3": "52:54:00:12:35:03",
             "10.0.2.2": "52:54:00:12:35:02"
           },
           "routes": [
@@ -198,15 +280,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "170626",
-              "packets": "296",
+              "bytes": "267098",
+              "packets": "403",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "170626",
-              "packets": "296",
+              "bytes": "267098",
+              "packets": "403",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -216,16 +298,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "616394",
-              "packets": "9491",
+              "bytes": "2120294",
+              "packets": "26966",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "23240390",
-              "packets": "17111",
+              "bytes": "65611451",
+              "packets": "48923",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -426,14 +508,14 @@
     "filesystem": {
       "/dev/mapper/vagrant-root": {
         "kb_size": "40260188",
-        "kb_used": "1855080",
-        "kb_available": "36359976",
-        "percent_used": "5%",
+        "kb_used": "2014968",
+        "kb_available": "36200088",
+        "percent_used": "6%",
         "mount": "/",
         "total_inodes": "2559088",
-        "inodes_used": "99670",
-        "inodes_available": "2459418",
-        "inodes_percent_used": "4%",
+        "inodes_used": "107189",
+        "inodes_available": "2451899",
+        "inodes_percent_used": "5%",
         "fs_type": "ext4",
         "mount_options": [
           "rw",
@@ -509,8 +591,8 @@
       },
       "vagrant": {
         "kb_size": "244277768",
-        "kb_used": "57753180",
-        "kb_available": "186524588",
+        "kb_used": "58383492",
+        "kb_available": "185894276",
         "percent_used": "24%",
         "mount": "/vagrant",
         "total_inodes": "1000",
@@ -583,32 +665,32 @@
     },
     "memory": {
       "swap": {
-        "cached": "0kB",
+        "cached": "8kB",
         "total": "786428kB",
-        "free": "786428kB"
+        "free": "786200kB"
       },
       "total": "378384kB",
-      "free": "60808kB",
-      "buffers": "33236kB",
-      "cached": "203652kB",
-      "active": "130028kB",
-      "inactive": "160556kB",
+      "free": "46044kB",
+      "buffers": "87812kB",
+      "cached": "146040kB",
+      "active": "146808kB",
+      "inactive": "140780kB",
       "high_total": "0kB",
       "high_free": "0kB",
       "low_total": "378384kB",
-      "low_free": "60808kB",
-      "dirty": "20kB",
+      "low_free": "46044kB",
+      "dirty": "44kB",
       "writeback": "0kB",
-      "anon_pages": "53700kB",
-      "mapped": "8972kB",
-      "slab": "19384kB",
-      "slab_reclaimable": "14168kB",
-      "slab_unreclaim": "5216kB",
+      "anon_pages": "53752kB",
+      "mapped": "9032kB",
+      "slab": "36856kB",
+      "slab_reclaimable": "31128kB",
+      "slab_unreclaim": "5728kB",
       "page_tables": "724kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "975620kB",
-      "committed_as": "109880kB",
+      "committed_as": "109772kB",
       "vmalloc_total": "643128kB",
       "vmalloc_used": "15068kB",
       "vmalloc_chunk": "627696kB"
@@ -1281,22 +1363,21 @@
         "removable": "0"
       }
     },
-    "ohai_time": 1409793975.3580298,
+    "ohai_time": 1409801336.80829,
     "init_package": "init",
-    "uptime_seconds": 290,
-    "uptime": "4 minutes 50 seconds",
-    "idletime_seconds": 261,
-    "idletime": "4 minutes 21 seconds",
+    "uptime_seconds": 7652,
+    "uptime": "2 hours 07 minutes 32 seconds",
+    "idletime_seconds": 7569,
+    "idletime": "2 hours 06 minutes 09 seconds",
     "recipes": [
-      "imagemagick::rmagick",
-      "imagemagick::default",
-      "imagemagick::devel"
+      "rbenv",
+      "rbenv::default"
     ],
     "roles": [
 
     ]
   },
   "run_list": [
-    "recipe[imagemagick::rmagick]"
+    "recipe[rbenv]"
   ]
 }
