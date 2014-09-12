@@ -2,4 +2,6 @@ source "https://supermarket.getchef.com"
 
 metadata
 
-cookbook 'imagemagick', '~> 0.2.3'
+#cookbook 'imagemagick', '~> 0.2.3'
+#cookbook 'chef-client'
+cookbook "disco"

@@ -1,9 +1,20 @@
 DEPENDENCIES
-  imagemagick (~> 0.2.3)
+  disco
   my_site
     path: .
     metadata: true
 
 GRAPH
-  imagemagick (0.2.3)
+  build-essential (2.0.6)
+  disco (0.1.2)
+    build-essential (>= 1.0.0)
+    python (>= 1.0.6)
+    simple_iptables (>= 0.1.0)
   my_site (0.1.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  simple_iptables (0.7.0)
+  yum (3.3.2)
+  yum-epel (0.5.1)
+    yum (~> 3.0)
