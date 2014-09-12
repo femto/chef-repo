@@ -1,20 +1,11 @@
 DEPENDENCIES
-  disco
+  auto-update
   my_site
     path: .
     metadata: true
 
 GRAPH
-  build-essential (2.0.6)
-  disco (0.1.2)
-    build-essential (>= 1.0.0)
-    python (>= 1.0.6)
-    simple_iptables (>= 0.1.0)
+  apt (2.6.0)
+  auto-update (0.3.0)
+    apt (>= 2.4.0)
   my_site (0.1.0)
-  python (1.4.6)
-    build-essential (>= 0.0.0)
-    yum-epel (>= 0.0.0)
-  simple_iptables (0.7.0)
-  yum (3.3.2)
-  yum-epel (0.5.1)
-    yum (~> 3.0)

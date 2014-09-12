@@ -4,4 +4,5 @@ metadata
 
 #cookbook 'imagemagick', '~> 0.2.3'
 #cookbook 'chef-client'
-cookbook "disco"
+#cookbook "disco"
+cookbook 'auto-update'
