@@ -29,6 +29,7 @@
 attrs = node["disco"]
 
 include_recipe "build-essential"
+include_recipe "disco::disco_user"
 package "erlang"
 
 directory attrs["checkout"] do

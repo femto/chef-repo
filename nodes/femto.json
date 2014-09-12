@@ -12,80 +12,261 @@
     }
   },
   "default": {
-    "rbenv": {
-      "git_url": "git://github.com/sstephenson/rbenv.git",
-      "git_ref": "v0.4.0",
-      "upgrade": "none",
-      "root_path": "/usr/local/rbenv",
-      "vagrant": {
-        "system_chef_solo": "/opt/ruby/bin/chef-solo"
+    "build-essential": {
+      "compile_time": false
+    },
+    "yum": {
+      "main": {
+        "cachedir": "/var/cache/yum/$basearch/$releasever",
+        "distroverpkg": "ubuntu-release",
+        "alwaysprompt": null,
+        "assumeyes": null,
+        "bandwidth": null,
+        "bugtracker_url": null,
+        "clean_requirements_on_remove": null,
+        "color": null,
+        "color_list_available_downgrade": null,
+        "color_list_available_install": null,
+        "color_list_available_reinstall": null,
+        "color_list_available_upgrade": null,
+        "color_list_installed_extra": null,
+        "color_list_installed_newer": null,
+        "color_list_installed_older": null,
+        "color_list_installed_reinstall": null,
+        "color_search_match": null,
+        "color_update_installed": null,
+        "color_update_local": null,
+        "color_update_remote": null,
+        "commands": null,
+        "debuglevel": null,
+        "diskspacecheck": null,
+        "enable_group_conditionals": null,
+        "errorlevel": null,
+        "exactarch": null,
+        "exclude": null,
+        "gpgcheck": true,
+        "group_package_types": null,
+        "groupremove_leaf_only": null,
+        "history_list_view": null,
+        "history_record": null,
+        "history_record_packages": null,
+        "http_caching": null,
+        "installonly_limit": null,
+        "installonlypkgs": null,
+        "installroot": null,
+        "keepalive": null,
+        "keepcache": false,
+        "kernelpkgnames": null,
+        "localpkg_gpgcheck": null,
+        "logfile": "/var/log/yum.log",
+        "max_retries": null,
+        "mdpolicy": null,
+        "metadata_expire": null,
+        "mirrorlist_expire": null,
+        "multilib_policy": null,
+        "obsoletes": null,
+        "overwrite_groups": null,
+        "password": null,
+        "path": "/etc/yum.conf",
+        "persistdir": null,
+        "pluginconfpath": null,
+        "pluginpath": null,
+        "plugins": null,
+        "protected_multilib": null,
+        "protected_packages": null,
+        "proxy": null,
+        "proxy_password": null,
+        "proxy_username": null,
+        "recent": null,
+        "releasever": null,
+        "repo_gpgcheck": null,
+        "reset_nice": null,
+        "rpmverbosity": null,
+        "showdupesfromrepos": null,
+        "skip_broken": null,
+        "ssl_check_cert_permissions": null,
+        "sslcacert": null,
+        "sslclientcert": null,
+        "sslclientkey": null,
+        "sslverify": null,
+        "syslog_device": null,
+        "syslog_facility": null,
+        "syslog_ident": null,
+        "throttle": null,
+        "timeout": null,
+        "tolerant": false,
+        "tsflags": null,
+        "username": null
       },
-      "user_installs": [
-        {
-          "user": "vagrant",
-          "rubies": [
-            "2.1.2"
-          ],
-          "global": "2.1.2",
-          "gems": {
-            "2.1.2": [
-              {
-                "name": "rails"
-              },
-              {
-                "name": "rake"
-              }
-            ],
-            "jruby-1.6.5": [
-              {
-                "name": "rest-client"
-              }
-            ]
-          }
-        }
-      ],
-      "rubies": [
-        "2.1.2"
-      ],
-      "user_rubies": [
-        "2.1.2"
-      ],
-      "gems": {
+      "epel-debuginfo": {
+        "repositoryid": "epel-debuginfo",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
       },
-      "user_gems": {
+      "epel-source": {
+        "repositoryid": "epel-source",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
       },
-      "plugins": [
-
-      ],
-      "user_plugins": [
-
-      ],
-      "create_profiled": true,
-      "user_home_root": "/home",
-      "user": [
-        {
-          "user": "vagrant",
-          "rubies": [
-            "2.1.2"
-          ],
-          "global": "2.1.2",
-          "gems": {
-            "2.1.2": [
-              {
-                "name": "rails"
-              },
-              {
-                "name": "rake"
-              }
-            ],
-            "jruby-1.6.5": [
-              {
-                "name": "rest-client"
-              }
-            ]
-          }
-        }
+      "epel-testing-debuginfo": {
+        "repositoryid": "epel-testing-debuginfo",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
+      },
+      "epel-testing-source": {
+        "repositoryid": "epel-testing-source",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
+      },
+      "epel-testing": {
+        "repositoryid": "epel-testing",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
+      },
+      "epel": {
+        "repositoryid": "epel",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": true,
+        "managed": true
+      }
+    },
+    "yum-epel": {
+      "repositories": [
+        "epel",
+        "epel-debuginfo",
+        "epel-source",
+        "epel-testing",
+        "epel-testing-debuginfo",
+        "epel-testing-source"
       ]
+    },
+    "python": {
+      "install_method": "package",
+      "prefix_dir": "/usr",
+      "binary": "/usr/bin/python",
+      "url": "http://www.python.org/ftp/python",
+      "version": "2.7.5",
+      "checksum": "3b477554864e616a041ee4d7cef9849751770bc7c39adaf78a94ea145c488059",
+      "configure_options": [
+        "--prefix=/usr"
+      ],
+      "make_options": [
+        "install"
+      ],
+      "pip_location": "/usr/bin/pip",
+      "virtualenv_location": "/usr/bin/virtualenv",
+      "setuptools_version": null,
+      "virtualenv_version": null
+    },
+    "simple_iptables": {
+      "ipv4": {
+        "rules": {
+          "filter": [
+
+          ],
+          "nat": [
+
+          ],
+          "mangle": [
+
+          ],
+          "raw": [
+
+          ]
+        },
+        "chains": {
+          "filter": [
+
+          ],
+          "nat": [
+
+          ],
+          "mangle": [
+
+          ],
+          "raw": [
+
+          ]
+        },
+        "policy": {
+          "filter": {
+          },
+          "nat": {
+          },
+          "mangle": {
+          },
+          "raw": {
+          }
+        },
+        "tables": [
+          "filter",
+          "nat",
+          "mangle",
+          "raw"
+        ]
+      },
+      "ipv6": {
+        "rules": {
+          "filter": [
+
+          ],
+          "mangle": [
+
+          ],
+          "raw": [
+
+          ]
+        },
+        "chains": {
+          "filter": [
+
+          ],
+          "mangle": [
+
+          ],
+          "raw": [
+
+          ]
+        },
+        "policy": {
+          "filter": {
+          },
+          "mangle": {
+          },
+          "raw": {
+          }
+        },
+        "tables": [
+          "filter",
+          "mangle",
+          "raw"
+        ]
+      },
+      "ip_versions": [
+        "ipv4"
+      ]
+    },
+    "disco": {
+      "repository": "https://github.com/discoproject/disco.git",
+      "revision": "0.4.2",
+      "checkout": "/usr/src/disco",
+      "user": "disco",
+      "group": "disco",
+      "slave_search": "recipes:disco"
+    },
+    "erlang": {
+      "magic_cookie": "set_met_to_something_random"
     }
   },
   "automatic": {
@@ -147,12 +328,12 @@
           "size": "202291",
           "refcount": "2"
         },
-        "mac_hid": {
-          "size": "13078",
-          "refcount": "0"
-        },
         "i2c_piix4": {
           "size": "13094",
+          "refcount": "0"
+        },
+        "mac_hid": {
+          "size": "13078",
           "refcount": "0"
         },
         "lp": {
@@ -247,7 +428,8 @@
           },
           "state": "up",
           "arp": {
-            "10.0.2.2": "52:54:00:12:35:02"
+            "10.0.2.2": "52:54:00:12:35:02",
+            "10.0.2.3": "52:54:00:12:35:03"
           },
           "routes": [
             {
@@ -280,15 +462,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "267098",
-              "packets": "403",
+              "bytes": "561757",
+              "packets": "1093",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "267098",
-              "packets": "403",
+              "bytes": "561757",
+              "packets": "1093",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -298,16 +480,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "2120294",
-              "packets": "26966",
+              "bytes": "431131",
+              "packets": "2947",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "65611451",
-              "packets": "48923",
+              "bytes": "904833",
+              "packets": "3668",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -450,7 +632,7 @@
             "String 1": "vboxVer_4.3.14",
             "String 2": "vboxRev_95030",
             "Header and Data": {
-              "80 08 08 00 9A 65 26 00": null
+              "80 08 08 00 16 FC 25 00": null
             }
           }
         ],
@@ -465,7 +647,7 @@
         "model": "69",
         "model_name": "Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz",
         "stepping": "1",
-        "mhz": "2516.543",
+        "mhz": "2489.367",
         "cache_size": "6144 KB",
         "flags": [
           "fpu",
@@ -508,14 +690,14 @@
     "filesystem": {
       "/dev/mapper/vagrant-root": {
         "kb_size": "40260188",
-        "kb_used": "2014968",
-        "kb_available": "36200088",
+        "kb_used": "2258524",
+        "kb_available": "35956532",
         "percent_used": "6%",
         "mount": "/",
         "total_inodes": "2559088",
-        "inodes_used": "107189",
-        "inodes_available": "2451899",
-        "inodes_percent_used": "5%",
+        "inodes_used": "129761",
+        "inodes_available": "2429327",
+        "inodes_percent_used": "6%",
         "fs_type": "ext4",
         "mount_options": [
           "rw",
@@ -591,9 +773,9 @@
       },
       "vagrant": {
         "kb_size": "244277768",
-        "kb_used": "58383492",
-        "kb_available": "185894276",
-        "percent_used": "24%",
+        "kb_used": "61334540",
+        "kb_available": "182943228",
+        "percent_used": "26%",
         "mount": "/vagrant",
         "total_inodes": "1000",
         "inodes_used": "0",
@@ -665,32 +847,32 @@
     },
     "memory": {
       "swap": {
-        "cached": "8kB",
+        "cached": "0kB",
         "total": "786428kB",
-        "free": "786200kB"
+        "free": "786428kB"
       },
       "total": "378384kB",
-      "free": "46044kB",
-      "buffers": "87812kB",
-      "cached": "146040kB",
-      "active": "146808kB",
-      "inactive": "140780kB",
+      "free": "212504kB",
+      "buffers": "30552kB",
+      "cached": "58728kB",
+      "active": "104280kB",
+      "inactive": "39852kB",
       "high_total": "0kB",
       "high_free": "0kB",
       "low_total": "378384kB",
-      "low_free": "46044kB",
-      "dirty": "44kB",
+      "low_free": "212504kB",
+      "dirty": "32kB",
       "writeback": "0kB",
-      "anon_pages": "53752kB",
-      "mapped": "9032kB",
-      "slab": "36856kB",
-      "slab_reclaimable": "31128kB",
-      "slab_unreclaim": "5728kB",
-      "page_tables": "724kB",
+      "anon_pages": "54844kB",
+      "mapped": "9036kB",
+      "slab": "13984kB",
+      "slab_reclaimable": "8772kB",
+      "slab_unreclaim": "5212kB",
+      "page_tables": "744kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "975620kB",
-      "committed_as": "109772kB",
+      "committed_as": "111116kB",
       "vmalloc_total": "643128kB",
       "vmalloc_used": "15068kB",
       "vmalloc_chunk": "627696kB"
@@ -712,8 +894,8 @@
       },
       "ruby": {
         "platform": "i686-linux",
-        "version": "1.9.3",
-        "release_date": "2013-11-22",
+        "version": "2.1.2",
+        "release_date": "2014-05-08",
         "target": "i686-pc-linux-gnu",
         "target_cpu": "i686",
         "target_vendor": "pc",
@@ -722,10 +904,10 @@
         "host_cpu": "i686",
         "host_os": "linux-gnu",
         "host_vendor": "pc",
-        "bin_dir": "/opt/chef/embedded/bin",
-        "ruby_bin": "/opt/chef/embedded/bin/ruby",
-        "gems_dir": "/opt/chef/embedded/lib/ruby/gems/1.9.1",
-        "gem_bin": "/opt/chef/embedded/bin/gem"
+        "bin_dir": "/home/vagrant/.rbenv/versions/2.1.2/bin",
+        "ruby_bin": "/home/vagrant/.rbenv/versions/2.1.2/bin/ruby",
+        "gems_dir": "/home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0",
+        "gem_bin": "/home/vagrant/.rbenv/versions/2.1.2/bin/gem"
       }
     },
     "keys": {
@@ -905,6 +1087,13 @@
           "uid": 999,
           "shell": "/bin/false",
           "gecos": ""
+        },
+        "disco": {
+          "dir": "/home/disco",
+          "gid": 15001,
+          "uid": 15001,
+          "shell": "/bin/bash",
+          "gecos": "Disco User"
         }
       },
       "group": {
@@ -1207,6 +1396,18 @@
           "members": [
 
           ]
+        },
+        "ssl-cert": {
+          "gid": 110,
+          "members": [
+
+          ]
+        },
+        "disco": {
+          "gid": 15001,
+          "members": [
+
+          ]
         }
       }
     },
@@ -1363,21 +1564,20 @@
         "removable": "0"
       }
     },
-    "ohai_time": 1409801336.80829,
+    "ohai_time": 1410512414.564766,
     "init_package": "init",
-    "uptime_seconds": 7652,
-    "uptime": "2 hours 07 minutes 32 seconds",
-    "idletime_seconds": 7569,
-    "idletime": "2 hours 06 minutes 09 seconds",
+    "uptime_seconds": 944,
+    "uptime": "15 minutes 44 seconds",
+    "idletime_seconds": 880,
+    "idletime": "14 minutes 40 seconds",
     "recipes": [
-      "rbenv",
-      "rbenv::default"
+      "disco::disco_user"
     ],
     "roles": [
 
     ]
   },
   "run_list": [
-    "recipe[rbenv]"
+    "recipe[disco::disco_user]"
   ]
 }
