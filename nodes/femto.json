@@ -47,9 +47,265 @@
       }
     },
     "auto-update": {
-      "enabled": false,
+      "enabled": true,
       "stamp_file": "/var/tmp/periodic_update_last_run",
       "interval": 86400
+    },
+    "build-essential": {
+      "compile_time": false
+    },
+    "yum": {
+      "main": {
+        "cachedir": "/var/cache/yum/$basearch/$releasever",
+        "distroverpkg": "ubuntu-release",
+        "alwaysprompt": null,
+        "assumeyes": null,
+        "bandwidth": null,
+        "bugtracker_url": null,
+        "clean_requirements_on_remove": null,
+        "color": null,
+        "color_list_available_downgrade": null,
+        "color_list_available_install": null,
+        "color_list_available_reinstall": null,
+        "color_list_available_upgrade": null,
+        "color_list_installed_extra": null,
+        "color_list_installed_newer": null,
+        "color_list_installed_older": null,
+        "color_list_installed_reinstall": null,
+        "color_search_match": null,
+        "color_update_installed": null,
+        "color_update_local": null,
+        "color_update_remote": null,
+        "commands": null,
+        "debuglevel": null,
+        "diskspacecheck": null,
+        "enable_group_conditionals": null,
+        "errorlevel": null,
+        "exactarch": null,
+        "exclude": null,
+        "gpgcheck": true,
+        "group_package_types": null,
+        "groupremove_leaf_only": null,
+        "history_list_view": null,
+        "history_record": null,
+        "history_record_packages": null,
+        "http_caching": null,
+        "installonly_limit": null,
+        "installonlypkgs": null,
+        "installroot": null,
+        "keepalive": null,
+        "keepcache": false,
+        "kernelpkgnames": null,
+        "localpkg_gpgcheck": null,
+        "logfile": "/var/log/yum.log",
+        "max_retries": null,
+        "mdpolicy": null,
+        "metadata_expire": null,
+        "mirrorlist_expire": null,
+        "multilib_policy": null,
+        "obsoletes": null,
+        "overwrite_groups": null,
+        "password": null,
+        "path": "/etc/yum.conf",
+        "persistdir": null,
+        "pluginconfpath": null,
+        "pluginpath": null,
+        "plugins": null,
+        "protected_multilib": null,
+        "protected_packages": null,
+        "proxy": null,
+        "proxy_password": null,
+        "proxy_username": null,
+        "recent": null,
+        "releasever": null,
+        "repo_gpgcheck": null,
+        "reset_nice": null,
+        "rpmverbosity": null,
+        "showdupesfromrepos": null,
+        "skip_broken": null,
+        "ssl_check_cert_permissions": null,
+        "sslcacert": null,
+        "sslclientcert": null,
+        "sslclientkey": null,
+        "sslverify": null,
+        "syslog_device": null,
+        "syslog_facility": null,
+        "syslog_ident": null,
+        "throttle": null,
+        "timeout": null,
+        "tolerant": false,
+        "tsflags": null,
+        "username": null
+      },
+      "epel-debuginfo": {
+        "repositoryid": "epel-debuginfo",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
+      },
+      "epel-source": {
+        "repositoryid": "epel-source",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
+      },
+      "epel-testing-debuginfo": {
+        "repositoryid": "epel-testing-debuginfo",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
+      },
+      "epel-testing-source": {
+        "repositoryid": "epel-testing-source",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
+      },
+      "epel-testing": {
+        "repositoryid": "epel-testing",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": false,
+        "managed": false
+      },
+      "epel": {
+        "repositoryid": "epel",
+        "failovermethod": "priority",
+        "gpgcheck": true,
+        "enabled": true,
+        "managed": true
+      }
+    },
+    "yum-epel": {
+      "repositories": [
+        "epel",
+        "epel-debuginfo",
+        "epel-source",
+        "epel-testing",
+        "epel-testing-debuginfo",
+        "epel-testing-source"
+      ]
+    },
+    "python": {
+      "install_method": "package",
+      "prefix_dir": "/usr",
+      "binary": "/usr/bin/python",
+      "url": "http://www.python.org/ftp/python",
+      "version": "2.7.5",
+      "checksum": "3b477554864e616a041ee4d7cef9849751770bc7c39adaf78a94ea145c488059",
+      "configure_options": [
+        "--prefix=/usr"
+      ],
+      "make_options": [
+        "install"
+      ],
+      "pip_location": "/usr/bin/pip",
+      "virtualenv_location": "/usr/bin/virtualenv",
+      "setuptools_version": null,
+      "virtualenv_version": null
+    },
+    "simple_iptables": {
+      "ipv4": {
+        "rules": {
+          "filter": [
+
+          ],
+          "nat": [
+
+          ],
+          "mangle": [
+
+          ],
+          "raw": [
+
+          ]
+        },
+        "chains": {
+          "filter": [
+
+          ],
+          "nat": [
+
+          ],
+          "mangle": [
+
+          ],
+          "raw": [
+
+          ]
+        },
+        "policy": {
+          "filter": {
+          },
+          "nat": {
+          },
+          "mangle": {
+          },
+          "raw": {
+          }
+        },
+        "tables": [
+          "filter",
+          "nat",
+          "mangle",
+          "raw"
+        ]
+      },
+      "ipv6": {
+        "rules": {
+          "filter": [
+
+          ],
+          "mangle": [
+
+          ],
+          "raw": [
+
+          ]
+        },
+        "chains": {
+          "filter": [
+
+          ],
+          "mangle": [
+
+          ],
+          "raw": [
+
+          ]
+        },
+        "policy": {
+          "filter": {
+          },
+          "mangle": {
+          },
+          "raw": {
+          }
+        },
+        "tables": [
+          "filter",
+          "mangle",
+          "raw"
+        ]
+      },
+      "ip_versions": [
+        "ipv4"
+      ]
+    },
+    "disco": {
+      "repository": "https://github.com/discoproject/disco.git",
+      "revision": "0.4.2",
+      "checkout": "/usr/src/disco",
+      "user": "disco",
+      "group": "disco",
+      "slave_search": "recipes:disco"
+    },
+    "erlang": {
+      "magic_cookie": "set_met_to_something_random"
     }
   },
   "automatic": {
@@ -67,6 +323,58 @@
       "machine": "i686",
       "os": "GNU/Linux",
       "modules": {
+        "btrfs": {
+          "size": "750128",
+          "refcount": "0"
+        },
+        "zlib_deflate": {
+          "size": "26623",
+          "refcount": "1"
+        },
+        "libcrc32c": {
+          "size": "12544",
+          "refcount": "1"
+        },
+        "ufs": {
+          "size": "78132",
+          "refcount": "0"
+        },
+        "qnx4": {
+          "size": "13192",
+          "refcount": "0"
+        },
+        "hfsplus": {
+          "size": "83581",
+          "refcount": "0"
+        },
+        "hfs": {
+          "size": "49480",
+          "refcount": "0"
+        },
+        "minix": {
+          "size": "31538",
+          "refcount": "0"
+        },
+        "ntfs": {
+          "size": "100207",
+          "refcount": "0"
+        },
+        "msdos": {
+          "size": "17133",
+          "refcount": "0"
+        },
+        "jfs": {
+          "size": "175096",
+          "refcount": "0"
+        },
+        "xfs": {
+          "size": "754484",
+          "refcount": "0"
+        },
+        "reiserfs": {
+          "size": "235181",
+          "refcount": "0"
+        },
         "vboxvideo": {
           "size": "12540",
           "refcount": "0"
@@ -87,16 +395,16 @@
           "size": "12850",
           "refcount": "0"
         },
-        "ext2": {
-          "size": "67991",
-          "refcount": "1"
-        },
         "microcode": {
           "size": "18396",
           "refcount": "0"
         },
         "parport_pc": {
           "size": "32115",
+          "refcount": "0"
+        },
+        "mac_hid": {
+          "size": "13078",
           "refcount": "0"
         },
         "psmouse": {
@@ -107,17 +415,17 @@
           "size": "13032",
           "refcount": "0"
         },
-        "vboxguest": {
-          "size": "202291",
-          "refcount": "2"
-        },
         "i2c_piix4": {
           "size": "13094",
           "refcount": "0"
         },
-        "mac_hid": {
-          "size": "13078",
-          "refcount": "0"
+        "vboxguest": {
+          "size": "202291",
+          "refcount": "2"
+        },
+        "ext2": {
+          "size": "67991",
+          "refcount": "1"
         },
         "lp": {
           "size": "17456",
@@ -151,7 +459,7 @@
       "id": "Ubuntu",
       "release": "12.04",
       "codename": "precise",
-      "description": "Ubuntu 12.04.2 LTS"
+      "description": "Ubuntu 12.04.5 LTS"
     },
     "platform": "ubuntu",
     "platform_version": "12.04",
@@ -211,8 +519,8 @@
           },
           "state": "up",
           "arp": {
-            "10.0.2.2": "52:54:00:12:35:02",
-            "10.0.2.3": "52:54:00:12:35:03"
+            "10.0.2.3": "52:54:00:12:35:03",
+            "10.0.2.2": "52:54:00:12:35:02"
           },
           "routes": [
             {
@@ -245,15 +553,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "1344597",
-              "packets": "1751",
+              "bytes": "432173",
+              "packets": "1011",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "1344597",
-              "packets": "1751",
+              "bytes": "432173",
+              "packets": "1011",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -263,16 +571,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "3025447",
-              "packets": "44685",
+              "bytes": "2106170",
+              "packets": "33892",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "106559350",
-              "packets": "79194",
+              "bytes": "89670734",
+              "packets": "63730",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -415,7 +723,7 @@
             "String 1": "vboxVer_4.3.14",
             "String 2": "vboxRev_95030",
             "Header and Data": {
-              "80 08 08 00 16 FC 25 00": null
+              "80 08 08 00 FF BE 23 00": null
             }
           }
         ],
@@ -430,7 +738,7 @@
         "model": "69",
         "model_name": "Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz",
         "stepping": "1",
-        "mhz": "2489.367",
+        "mhz": "2341.339",
         "cache_size": "6144 KB",
         "flags": [
           "fpu",
@@ -473,13 +781,13 @@
     "filesystem": {
       "/dev/mapper/vagrant-root": {
         "kb_size": "40260188",
-        "kb_used": "2359940",
-        "kb_available": "35855116",
-        "percent_used": "7%",
+        "kb_used": "2763208",
+        "kb_available": "35451848",
+        "percent_used": "8%",
         "mount": "/",
         "total_inodes": "2559088",
-        "inodes_used": "129962",
-        "inodes_available": "2429126",
+        "inodes_used": "138716",
+        "inodes_available": "2420372",
         "inodes_percent_used": "6%",
         "fs_type": "ext4",
         "mount_options": [
@@ -489,13 +797,13 @@
       },
       "udev": {
         "kb_size": "179596",
-        "kb_used": "4",
-        "kb_available": "179592",
+        "kb_used": "8",
+        "kb_available": "179588",
         "percent_used": "1%",
         "mount": "/dev",
         "total_inodes": "44899",
-        "inodes_used": "458",
-        "inodes_available": "44441",
+        "inodes_used": "460",
+        "inodes_available": "44439",
         "inodes_percent_used": "2%",
         "fs_type": "devtmpfs",
         "mount_options": [
@@ -510,8 +818,8 @@
         "percent_used": "1%",
         "mount": "/run",
         "total_inodes": "47298",
-        "inodes_used": "356",
-        "inodes_available": "46942",
+        "inodes_used": "357",
+        "inodes_available": "46941",
         "inodes_percent_used": "1%",
         "fs_type": "tmpfs",
         "mount_options": [
@@ -541,9 +849,9 @@
       },
       "/dev/sda1": {
         "kb_size": "233191",
-        "kb_used": "55795",
-        "kb_available": "164955",
-        "percent_used": "26%",
+        "kb_used": "58280",
+        "kb_available": "162470",
+        "percent_used": "27%",
         "mount": "/boot",
         "total_inodes": "124496",
         "inodes_used": "235",
@@ -556,8 +864,8 @@
       },
       "vagrant": {
         "kb_size": "244277768",
-        "kb_used": "61400056",
-        "kb_available": "182877712",
+        "kb_used": "62010476",
+        "kb_available": "182267292",
         "percent_used": "26%",
         "mount": "/vagrant",
         "total_inodes": "1000",
@@ -630,35 +938,35 @@
     },
     "memory": {
       "swap": {
-        "cached": "0kB",
+        "cached": "220kB",
         "total": "786428kB",
-        "free": "786428kB"
+        "free": "785468kB"
       },
       "total": "378384kB",
-      "free": "32352kB",
-      "buffers": "31372kB",
-      "cached": "233780kB",
-      "active": "166236kB",
-      "inactive": "153804kB",
+      "free": "28988kB",
+      "buffers": "34136kB",
+      "cached": "213300kB",
+      "active": "168844kB",
+      "inactive": "142140kB",
       "high_total": "0kB",
       "high_free": "0kB",
       "low_total": "378384kB",
-      "low_free": "32352kB",
-      "dirty": "32kB",
+      "low_free": "28988kB",
+      "dirty": "20kB",
       "writeback": "0kB",
-      "anon_pages": "54908kB",
-      "mapped": "9020kB",
-      "slab": "18376kB",
-      "slab_reclaimable": "12992kB",
-      "slab_unreclaim": "5384kB",
-      "page_tables": "732kB",
+      "anon_pages": "63320kB",
+      "mapped": "11772kB",
+      "slab": "26092kB",
+      "slab_reclaimable": "20176kB",
+      "slab_unreclaim": "5916kB",
+      "page_tables": "844kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "975620kB",
-      "committed_as": "111140kB",
+      "committed_as": "125964kB",
       "vmalloc_total": "643128kB",
-      "vmalloc_used": "15068kB",
-      "vmalloc_chunk": "627696kB"
+      "vmalloc_used": "19184kB",
+      "vmalloc_chunk": "622504kB"
     },
     "languages": {
       "c": {
@@ -691,6 +999,24 @@
         "ruby_bin": "/home/vagrant/.rbenv/versions/2.1.2/bin/ruby",
         "gems_dir": "/home/vagrant/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0",
         "gem_bin": "/home/vagrant/.rbenv/versions/2.1.2/bin/gem"
+      },
+      "java": {
+        "version": "1.6.0_32",
+        "runtime": {
+          "name": "OpenJDK Runtime Environment (IcedTea6 1.13.4)",
+          "build": "6b32-1.13.4-4ubuntu0.12.04.2"
+        },
+        "hotspot": {
+          "name": "OpenJDK Client VM",
+          "build": "23.25-b01, mixed mode, sharing"
+        }
+      },
+      "erlang": {
+        "version": "5.8.5",
+        "options": [
+          "ASYNC_THREADS"
+        ],
+        "emulator": "BEAM"
       }
     },
     "keys": {
@@ -1191,6 +1517,12 @@
           "members": [
 
           ]
+        },
+        "utempter": {
+          "gid": 111,
+          "members": [
+
+          ]
         }
       }
     },
@@ -1347,21 +1679,29 @@
         "removable": "0"
       }
     },
-    "ohai_time": 1410513579.7691576,
+    "ohai_time": 1410515209.5097177,
     "init_package": "init",
-    "uptime_seconds": 2109,
-    "uptime": "35 minutes 09 seconds",
-    "idletime_seconds": 1943,
-    "idletime": "32 minutes 23 seconds",
+    "uptime_seconds": 1323,
+    "uptime": "22 minutes 03 seconds",
+    "idletime_seconds": 1195,
+    "idletime": "19 minutes 55 seconds",
     "recipes": [
       "auto-update",
-      "auto-update::default"
+      "disco::disco_user",
+      "disco",
+      "auto-update::default",
+      "apt::default",
+      "disco::default",
+      "build-essential::default",
+      "build-essential::_debian"
     ],
     "roles": [
 
     ]
   },
   "run_list": [
-    "recipe[auto-update]"
+    "recipe[auto-update]",
+    "recipe[disco::disco_user]",
+    "recipe[disco]"
   ]
 }

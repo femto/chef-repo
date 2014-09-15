@@ -94,27 +94,27 @@ end
 
 
 # web UI
-simple_iptables_rule "disco" do
-  rule "--proto tcp --dport 8989"
-  jump "ACCEPT"
-end
-
-# DDFS
-simple_iptables_rule "disco" do
-  rule "--proto tcp --dport 8990"
-  jump "ACCEPT"
-end
-
-["tcp", "udp"].each do |proto|
-  # erlang port mapper
-  simple_iptables_rule "disco" do
-    rule "--proto #{proto} --dport 4369"
-    jump "ACCEPT"
-  end
-
-  # erlang slave ports
-  simple_iptables_rule "disco" do
-    rule "--proto #{proto} --dport 30000:65535"
-    jump "ACCEPT"
-  end
-end
+# simple_iptables_rule "disco" do
+#   rule "--proto tcp --dport 8989"
+#   jump "ACCEPT"
+# end
+#
+# # DDFS
+# simple_iptables_rule "disco" do
+#   rule "--proto tcp --dport 8990"
+#   jump "ACCEPT"
+# end
+#
+# ["tcp", "udp"].each do |proto|
+#   # erlang port mapper
+#   simple_iptables_rule "disco" do
+#     rule "--proto #{proto} --dport 4369"
+#     jump "ACCEPT"
+#   end
+#
+#   # erlang slave ports
+#   simple_iptables_rule "disco" do
+#     rule "--proto #{proto} --dport 30000:65535"
+#     jump "ACCEPT"
+#   end
+# end
