@@ -7,4 +7,5 @@ metadata
 #cookbook "disco"
 #cookbook 'auto-update'
 #cookbook 'jenkins'
-cookbook 'elasticsearch'
+#cookbook 'elasticsearch'
+cookbook 'nginx'

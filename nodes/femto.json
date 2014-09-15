@@ -9,303 +9,182 @@
         "git-core",
         "grep"
       ]
+    },
+    "elasticsearch": {
     }
   },
   "default": {
-    "apt": {
-      "cacher-client": {
-        "restrict_environment": false
-      },
-      "cacher_dir": "/var/cache/apt-cacher-ng",
-      "cacher_interface": null,
-      "cacher_port": 3142,
-      "caching_server": false,
-      "compiletime": false,
-      "compile_time_update": false,
-      "key_proxy": "",
-      "cache_bypass": {
-      },
-      "periodic_update_min_delay": 86400,
-      "launchpad_api_version": "1.0",
-      "unattended_upgrades": {
-        "enable": false,
-        "update_package_lists": true,
-        "allowed_origins": [
-          "Ubuntu precise"
-        ],
-        "package_blacklist": [
-
-        ],
-        "auto_fix_interrupted_dpkg": false,
-        "minimal_steps": false,
-        "install_on_shutdown": false,
-        "mail": null,
-        "mail_only_on_error": true,
-        "remove_unused_dependencies": false,
-        "automatic_reboot": false,
-        "dl_limit": null
-      }
+    "chef_handler": {
+      "root_user": "root",
+      "root_group": "root",
+      "handler_path": "/home/vagrant/.chef/local-mode-cache/handlers"
     },
-    "auto-update": {
-      "enabled": true,
-      "stamp_file": "/var/tmp/periodic_update_last_run",
-      "interval": 86400
+    "windows": {
+      "allow_pending_reboots": true,
+      "rubyzipversion": null,
+      "reboot_timeout": 60
     },
-    "build-essential": {
-      "compile_time": false
+    "7-zip": {
+      "url": "http://downloads.sourceforge.net/sevenzip/7z922.msi",
+      "checksum": "86df264d22c3dd3ab80cb55a118da2d41bdd95c2db2cd09a6bbdf48f069e3d7a",
+      "package_name": "7-Zip 9.22",
+      "home": "\\7-zip"
     },
-    "yum": {
-      "main": {
-        "cachedir": "/var/cache/yum/$basearch/$releasever",
-        "distroverpkg": "ubuntu-release",
-        "alwaysprompt": null,
-        "assumeyes": null,
-        "bandwidth": null,
-        "bugtracker_url": null,
-        "clean_requirements_on_remove": null,
-        "color": null,
-        "color_list_available_downgrade": null,
-        "color_list_available_install": null,
-        "color_list_available_reinstall": null,
-        "color_list_available_upgrade": null,
-        "color_list_installed_extra": null,
-        "color_list_installed_newer": null,
-        "color_list_installed_older": null,
-        "color_list_installed_reinstall": null,
-        "color_search_match": null,
-        "color_update_installed": null,
-        "color_update_local": null,
-        "color_update_remote": null,
-        "commands": null,
-        "debuglevel": null,
-        "diskspacecheck": null,
-        "enable_group_conditionals": null,
-        "errorlevel": null,
-        "exactarch": null,
-        "exclude": null,
-        "gpgcheck": true,
-        "group_package_types": null,
-        "groupremove_leaf_only": null,
-        "history_list_view": null,
-        "history_record": null,
-        "history_record_packages": null,
-        "http_caching": null,
-        "installonly_limit": null,
-        "installonlypkgs": null,
-        "installroot": null,
-        "keepalive": null,
-        "keepcache": false,
-        "kernelpkgnames": null,
-        "localpkg_gpgcheck": null,
-        "logfile": "/var/log/yum.log",
-        "max_retries": null,
-        "mdpolicy": null,
-        "metadata_expire": null,
-        "mirrorlist_expire": null,
-        "multilib_policy": null,
-        "obsoletes": null,
-        "overwrite_groups": null,
-        "password": null,
-        "path": "/etc/yum.conf",
-        "persistdir": null,
-        "pluginconfpath": null,
-        "pluginpath": null,
-        "plugins": null,
-        "protected_multilib": null,
-        "protected_packages": null,
-        "proxy": null,
-        "proxy_password": null,
-        "proxy_username": null,
-        "recent": null,
-        "releasever": null,
-        "repo_gpgcheck": null,
-        "reset_nice": null,
-        "rpmverbosity": null,
-        "showdupesfromrepos": null,
-        "skip_broken": null,
-        "ssl_check_cert_permissions": null,
-        "sslcacert": null,
-        "sslclientcert": null,
-        "sslclientkey": null,
-        "sslverify": null,
-        "syslog_device": null,
-        "syslog_facility": null,
-        "syslog_ident": null,
-        "throttle": null,
-        "timeout": null,
-        "tolerant": false,
-        "tsflags": null,
-        "username": null
-      },
-      "epel-debuginfo": {
-        "repositoryid": "epel-debuginfo",
-        "failovermethod": "priority",
-        "gpgcheck": true,
-        "enabled": false,
-        "managed": false
-      },
-      "epel-source": {
-        "repositoryid": "epel-source",
-        "failovermethod": "priority",
-        "gpgcheck": true,
-        "enabled": false,
-        "managed": false
-      },
-      "epel-testing-debuginfo": {
-        "repositoryid": "epel-testing-debuginfo",
-        "failovermethod": "priority",
-        "gpgcheck": true,
-        "enabled": false,
-        "managed": false
-      },
-      "epel-testing-source": {
-        "repositoryid": "epel-testing-source",
-        "failovermethod": "priority",
-        "gpgcheck": true,
-        "enabled": false,
-        "managed": false
-      },
-      "epel-testing": {
-        "repositoryid": "epel-testing",
-        "failovermethod": "priority",
-        "gpgcheck": true,
-        "enabled": false,
-        "managed": false
-      },
-      "epel": {
-        "repositoryid": "epel",
-        "failovermethod": "priority",
-        "gpgcheck": true,
-        "enabled": true,
-        "managed": true
-      }
-    },
-    "yum-epel": {
-      "repositories": [
-        "epel",
-        "epel-debuginfo",
-        "epel-source",
-        "epel-testing",
-        "epel-testing-debuginfo",
-        "epel-testing-source"
+    "ark": {
+      "apache_mirror": "http://apache.mirrors.tds.net",
+      "prefix_root": "/usr/local",
+      "prefix_bin": "/usr/local/bin",
+      "prefix_home": "/usr/local",
+      "tar": "/bin/tar",
+      "package_dependencies": [
+        "libtool",
+        "autoconf",
+        "unzip",
+        "rsync",
+        "make",
+        "gcc",
+        "autogen"
       ]
     },
-    "python": {
-      "install_method": "package",
-      "prefix_dir": "/usr",
-      "binary": "/usr/bin/python",
-      "url": "http://www.python.org/ftp/python",
-      "version": "2.7.5",
-      "checksum": "3b477554864e616a041ee4d7cef9849751770bc7c39adaf78a94ea145c488059",
-      "configure_options": [
-        "--prefix=/usr"
-      ],
-      "make_options": [
-        "install"
-      ],
-      "pip_location": "/usr/bin/pip",
-      "virtualenv_location": "/usr/bin/virtualenv",
-      "setuptools_version": null,
-      "virtualenv_version": null
-    },
-    "simple_iptables": {
-      "ipv4": {
-        "rules": {
-          "filter": [
-
-          ],
-          "nat": [
-
-          ],
-          "mangle": [
-
-          ],
-          "raw": [
-
-          ]
+    "elasticsearch": {
+      "version": "0.90.12",
+      "host": "http://download.elasticsearch.org",
+      "repository": "elasticsearch/elasticsearch",
+      "filename": "elasticsearch-0.90.12.tar.gz",
+      "download_url": "http://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.12.tar.gz",
+      "cluster": {
+        "name": "elasticsearch"
+      },
+      "node": {
+        "name": "femto",
+        "max_local_storage_nodes": 1
+      },
+      "dir": "/usr/local",
+      "bindir": "/usr/local/bin",
+      "user": "elasticsearch",
+      "uid": null,
+      "gid": null,
+      "path": {
+        "conf": "/usr/local/etc/elasticsearch",
+        "data": "/usr/local/var/data/elasticsearch",
+        "logs": "/usr/local/var/log/elasticsearch"
+      },
+      "pid_path": "/usr/local/var/run",
+      "pid_file": "/usr/local/var/run/femto.pid",
+      "templates": {
+        "elasticsearch_env": "elasticsearch-env.sh.erb",
+        "elasticsearch_yml": "elasticsearch.yml.erb",
+        "logging_yml": "logging.yml.erb"
+      },
+      "allocated_memory": "221m",
+      "gc_settings": "  -XX:+UseParNewGC\n  -XX:+UseConcMarkSweepGC\n  -XX:CMSInitiatingOccupancyFraction=75\n  -XX:+UseCMSInitiatingOccupancyOnly\n  -XX:+HeapDumpOnOutOfMemoryError\n",
+      "bootstrap": {
+        "mlockall": false
+      },
+      "limits": {
+        "memlock": "unlimited",
+        "nofile": "64000"
+      },
+      "index": {
+        "mapper": {
+          "dynamic": true
+        }
+      },
+      "action": {
+        "auto_create_index": true,
+        "disable_delete_all_indices": true
+      },
+      "discovery": {
+        "zen": {
+          "ping": {
+            "multicast": {
+              "enabled": true
+            }
+          },
+          "minimum_master_nodes": 1
         },
-        "chains": {
-          "filter": [
-
-          ],
-          "nat": [
-
-          ],
-          "mangle": [
-
-          ],
-          "raw": [
-
-          ]
-        },
-        "policy": {
-          "filter": {
-          },
-          "nat": {
-          },
-          "mangle": {
-          },
-          "raw": {
+        "type": null,
+        "ec2": {
+          "groups": null,
+          "tag": {
           }
-        },
-        "tables": [
-          "filter",
-          "nat",
-          "mangle",
-          "raw"
+        }
+      },
+      "gateway": {
+        "type": null,
+        "expected_nodes": 1
+      },
+      "thread_stack_size": "256k",
+      "env_options": "",
+      "skip_restart": false,
+      "skip_start": false,
+      "http": {
+        "port": 9200
+      },
+      "custom_config": {
+      },
+      "logging": {
+        "action": "DEBUG",
+        "com.amazonaws": "WARN",
+        "index.search.slowlog": "TRACE, index_search_slow_log_file",
+        "index.indexing.slowlog": "TRACE, index_indexing_slow_log_file"
+      },
+      "plugins": {
+        "elasticsearch/elasticsearch-cloud-aws": {
+          "version": "1.14.0"
+        }
+      },
+      "plugin": {
+        "mandatory": [
+
         ]
       },
-      "ipv6": {
-        "rules": {
-          "filter": [
-
-          ],
-          "mangle": [
-
-          ],
-          "raw": [
-
-          ]
-        },
-        "chains": {
-          "filter": [
-
-          ],
-          "mangle": [
-
-          ],
-          "raw": [
-
-          ]
-        },
-        "policy": {
-          "filter": {
-          },
-          "mangle": {
-          },
-          "raw": {
+      "cloud": {
+        "aws": {
+          "access_key": null,
+          "secret_key": null,
+          "region": null,
+          "ec2": {
+            "endpoint": null
           }
         },
-        "tables": [
-          "filter",
-          "mangle",
-          "raw"
-        ]
+        "node": {
+          "auto_attributes": true
+        }
       },
-      "ip_versions": [
-        "ipv4"
-      ]
+      "data": {
+        "devices": {
+        }
+      },
+      "deb_url": "https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.12.deb",
+      "deb_sha": "13783b95b35e347a3471f22234c544ae50655b78",
+      "nginx": {
+        "port": "8080",
+        "dir": "/etc/nginx",
+        "user": "www-data",
+        "log_dir": "/var/log/nginx",
+        "users": [
+
+        ],
+        "passwords_file": "/usr/local/etc/elasticsearch/passwords",
+        "allow_cluster_api": false,
+        "allow_status": false,
+        "client_max_body_size": "50M",
+        "location": "/"
+      },
+      "rpm_url": "https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.12.noarch.rpm",
+      "rpm_sha": "ab7ea2e00d8f1b73642e3ea44d9647b11e6b0b96"
     },
-    "disco": {
-      "repository": "https://github.com/discoproject/disco.git",
-      "revision": "0.4.2",
-      "checkout": "/usr/src/disco",
-      "user": "disco",
-      "group": "disco",
-      "slave_search": "recipes:disco"
-    },
-    "erlang": {
-      "magic_cookie": "set_met_to_something_random"
+    "nginx": {
+      "dir": "/etc/nginx",
+      "log_dir": "/var/log/nginx",
+      "binary": "/usr/sbin/nginx",
+      "root": "/var/www/nginx",
+      "user": "www-data",
+      "keepalive": "on",
+      "keepalive_timeout": 65,
+      "worker_processes": 1,
+      "worker_connections": 2048
     }
   },
   "automatic": {
@@ -323,58 +202,6 @@
       "machine": "i686",
       "os": "GNU/Linux",
       "modules": {
-        "btrfs": {
-          "size": "750128",
-          "refcount": "0"
-        },
-        "zlib_deflate": {
-          "size": "26623",
-          "refcount": "1"
-        },
-        "libcrc32c": {
-          "size": "12544",
-          "refcount": "1"
-        },
-        "ufs": {
-          "size": "78132",
-          "refcount": "0"
-        },
-        "qnx4": {
-          "size": "13192",
-          "refcount": "0"
-        },
-        "hfsplus": {
-          "size": "83581",
-          "refcount": "0"
-        },
-        "hfs": {
-          "size": "49480",
-          "refcount": "0"
-        },
-        "minix": {
-          "size": "31538",
-          "refcount": "0"
-        },
-        "ntfs": {
-          "size": "100207",
-          "refcount": "0"
-        },
-        "msdos": {
-          "size": "17133",
-          "refcount": "0"
-        },
-        "jfs": {
-          "size": "175096",
-          "refcount": "0"
-        },
-        "xfs": {
-          "size": "754484",
-          "refcount": "0"
-        },
-        "reiserfs": {
-          "size": "235181",
-          "refcount": "0"
-        },
         "vboxvideo": {
           "size": "12540",
           "refcount": "0"
@@ -395,16 +222,12 @@
           "size": "12850",
           "refcount": "0"
         },
+        "ext2": {
+          "size": "67991",
+          "refcount": "1"
+        },
         "microcode": {
           "size": "18396",
-          "refcount": "0"
-        },
-        "parport_pc": {
-          "size": "32115",
-          "refcount": "0"
-        },
-        "mac_hid": {
-          "size": "13078",
           "refcount": "0"
         },
         "psmouse": {
@@ -415,17 +238,17 @@
           "size": "13032",
           "refcount": "0"
         },
-        "i2c_piix4": {
-          "size": "13094",
+        "parport_pc": {
+          "size": "32115",
           "refcount": "0"
         },
         "vboxguest": {
           "size": "202291",
           "refcount": "2"
         },
-        "ext2": {
-          "size": "67991",
-          "refcount": "1"
+        "i2c_piix4": {
+          "size": "13094",
+          "refcount": "0"
         },
         "lp": {
           "size": "17456",
@@ -434,6 +257,10 @@
         "parport": {
           "size": "40931",
           "refcount": "3"
+        },
+        "mac_hid": {
+          "size": "13078",
+          "refcount": "0"
         },
         "vesafb": {
           "size": "13518",
@@ -519,8 +346,8 @@
           },
           "state": "up",
           "arp": {
-            "10.0.2.3": "52:54:00:12:35:03",
-            "10.0.2.2": "52:54:00:12:35:02"
+            "10.0.2.2": "52:54:00:12:35:02",
+            "10.0.2.3": "52:54:00:12:35:03"
           },
           "routes": [
             {
@@ -553,15 +380,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "432173",
-              "packets": "1011",
+              "bytes": "809158",
+              "packets": "739",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "432173",
-              "packets": "1011",
+              "bytes": "809158",
+              "packets": "739",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -571,16 +398,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "2106170",
-              "packets": "33892",
+              "bytes": "3744602",
+              "packets": "53295",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "89670734",
-              "packets": "63730",
+              "bytes": "138370144",
+              "packets": "98150",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -723,7 +550,7 @@
             "String 1": "vboxVer_4.3.14",
             "String 2": "vboxRev_95030",
             "Header and Data": {
-              "80 08 08 00 FF BE 23 00": null
+              "80 08 08 00 BE 19 23 00": null
             }
           }
         ],
@@ -738,7 +565,7 @@
         "model": "69",
         "model_name": "Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz",
         "stepping": "1",
-        "mhz": "2341.339",
+        "mhz": "2300.174",
         "cache_size": "6144 KB",
         "flags": [
           "fpu",
@@ -781,13 +608,13 @@
     "filesystem": {
       "/dev/mapper/vagrant-root": {
         "kb_size": "40260188",
-        "kb_used": "2763208",
-        "kb_available": "35451848",
-        "percent_used": "8%",
+        "kb_used": "3218440",
+        "kb_available": "34996616",
+        "percent_used": "9%",
         "mount": "/",
         "total_inodes": "2559088",
-        "inodes_used": "138716",
-        "inodes_available": "2420372",
+        "inodes_used": "142392",
+        "inodes_available": "2416696",
         "inodes_percent_used": "6%",
         "fs_type": "ext4",
         "mount_options": [
@@ -797,13 +624,13 @@
       },
       "udev": {
         "kb_size": "179596",
-        "kb_used": "8",
-        "kb_available": "179588",
+        "kb_used": "4",
+        "kb_available": "179592",
         "percent_used": "1%",
         "mount": "/dev",
         "total_inodes": "44899",
-        "inodes_used": "460",
-        "inodes_available": "44439",
+        "inodes_used": "458",
+        "inodes_available": "44441",
         "inodes_percent_used": "2%",
         "fs_type": "devtmpfs",
         "mount_options": [
@@ -813,13 +640,13 @@
       },
       "tmpfs": {
         "kb_size": "37840",
-        "kb_used": "260",
-        "kb_available": "37580",
+        "kb_used": "280",
+        "kb_available": "37560",
         "percent_used": "1%",
         "mount": "/run",
         "total_inodes": "47298",
-        "inodes_used": "357",
-        "inodes_available": "46941",
+        "inodes_used": "369",
+        "inodes_available": "46929",
         "inodes_percent_used": "1%",
         "fs_type": "tmpfs",
         "mount_options": [
@@ -864,8 +691,8 @@
       },
       "vagrant": {
         "kb_size": "244277768",
-        "kb_used": "62010476",
-        "kb_available": "182267292",
+        "kb_used": "62018844",
+        "kb_available": "182258924",
         "percent_used": "26%",
         "mount": "/vagrant",
         "total_inodes": "1000",
@@ -938,35 +765,35 @@
     },
     "memory": {
       "swap": {
-        "cached": "220kB",
+        "cached": "128kB",
         "total": "786428kB",
-        "free": "785468kB"
+        "free": "785180kB"
       },
       "total": "378384kB",
-      "free": "28988kB",
-      "buffers": "34136kB",
-      "cached": "213300kB",
-      "active": "168844kB",
-      "inactive": "142140kB",
+      "free": "19488kB",
+      "buffers": "14176kB",
+      "cached": "170800kB",
+      "active": "168256kB",
+      "inactive": "166388kB",
       "high_total": "0kB",
       "high_free": "0kB",
       "low_total": "378384kB",
-      "low_free": "28988kB",
-      "dirty": "20kB",
+      "low_free": "19488kB",
+      "dirty": "64kB",
       "writeback": "0kB",
-      "anon_pages": "63320kB",
-      "mapped": "11772kB",
-      "slab": "26092kB",
-      "slab_reclaimable": "20176kB",
-      "slab_unreclaim": "5916kB",
-      "page_tables": "844kB",
+      "anon_pages": "149536kB",
+      "mapped": "28784kB",
+      "slab": "16440kB",
+      "slab_reclaimable": "10548kB",
+      "slab_unreclaim": "5892kB",
+      "page_tables": "1300kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "975620kB",
-      "committed_as": "125964kB",
+      "committed_as": "263708kB",
       "vmalloc_total": "643128kB",
-      "vmalloc_used": "19184kB",
-      "vmalloc_chunk": "622504kB"
+      "vmalloc_used": "15068kB",
+      "vmalloc_chunk": "627696kB"
     },
     "languages": {
       "c": {
@@ -1203,6 +1030,13 @@
           "uid": 15001,
           "shell": "/bin/bash",
           "gecos": "Disco User"
+        },
+        "jenkins": {
+          "dir": "/var/lib/jenkins",
+          "gid": 112,
+          "uid": 104,
+          "shell": "/bin/bash",
+          "gecos": "Jenkins,,,"
         }
       },
       "group": {
@@ -1523,6 +1357,12 @@
           "members": [
 
           ]
+        },
+        "jenkins": {
+          "gid": 112,
+          "members": [
+
+          ]
         }
       }
     },
@@ -1679,29 +1519,23 @@
         "removable": "0"
       }
     },
-    "ohai_time": 1410515209.5097177,
+    "ohai_time": 1410762633.8213823,
     "init_package": "init",
-    "uptime_seconds": 1323,
-    "uptime": "22 minutes 03 seconds",
-    "idletime_seconds": 1195,
-    "idletime": "19 minutes 55 seconds",
+    "uptime_seconds": 2612,
+    "uptime": "43 minutes 32 seconds",
+    "idletime_seconds": 2438,
+    "idletime": "40 minutes 38 seconds",
     "recipes": [
-      "auto-update",
-      "disco::disco_user",
-      "disco",
-      "auto-update::default",
-      "apt::default",
-      "disco::default",
-      "build-essential::default",
-      "build-essential::_debian"
+      "elasticsearch",
+      "elasticsearch::default",
+      "elasticsearch::curl",
+      "ark::default"
     ],
     "roles": [
 
     ]
   },
   "run_list": [
-    "recipe[auto-update]",
-    "recipe[disco::disco_user]",
-    "recipe[disco]"
+    "recipe[elasticsearch]"
   ]
 }
